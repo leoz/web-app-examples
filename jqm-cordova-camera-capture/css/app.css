@@ -1,0 +1,14 @@
+.ui-icon-big-camera {
+    background: url(../img/camera.svg) no-repeat center;
+    background-size: 100px 100px;
+    width: 110px;
+    height: 110px;
+}
+
+#image_container {
+    width: 100%;
+    height: 370px;
+    background: url(../img/pattern_background.jpg);
+    position: relative
+}
+

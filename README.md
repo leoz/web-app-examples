@@ -6,4 +6,6 @@ Web App Examples
 3. [JQM Multi Page with navigation](http://htmlpreview.github.com/?https://github.com/leoz2011/web-app-examples/blob/master/jqm-multi-page-nav/index.html)
 4. [JQM Multi Page with navigation and effects](http://htmlpreview.github.com/?https://github.com/leoz2011/web-app-examples/blob/master/jqm-multi-page-complex/index.html)
 5. [JQM Multi Page with multiple HTML and widgets](http://htmlpreview.github.com/?https://github.com/leoz2011/web-app-examples/blob/master/jqm-multi-page-more-complex/index.html)
+6. JQM Cordova Camera Capture
+
 

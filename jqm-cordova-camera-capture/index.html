@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cordova Image Capture</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="cordova.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="main_page">
+    <div role="main" class="ui-content">
+        <div class="ui-body ui-body-a ui-corner-all">
+            <div style="text-align: center" >
+                <a id="btn_camera" class="ui-btn ui-btn-inline ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-big-camera"></a>
+            </div>
+            <h3 id="image_name" class="ui-bar ui-bar-a ui-corner-all" style="text-align: center">-</h3>
+            <div id="image_container">
+                <img id="image_source" width="100%">        
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
