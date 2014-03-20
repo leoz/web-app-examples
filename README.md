@@ -9,4 +9,5 @@ Web App Examples
 6. JQM Cordova Camera Capture
 7. [JQM Login Page](http://rawgithub.com/leoz2011/web-app-examples/master/jqm-login-page/index.html)
 8. [JQM RSS Feed](http://htmlpreview.github.com/?https://github.com/leoz2011/web-app-examples/blob/master/jqm-rss-feed/index.html)
+9. [JQM RSS Feed with better layout](http://htmlpreview.github.com/?https://github.com/leoz2011/web-app-examples/blob/master/jqm-rss-feed-complex/index.html)
 

@@ -1,0 +1,39 @@
+.avatar-box {
+//	background-color: red;
+}
+
+.title-box {
+//	background-color: pink;
+	width:100%;
+}
+
+.title-name {
+	margin-left: 10px;
+	font-weight: bold;
+	font-size: large;
+	color: rgb(42, 90, 138);
+}
+
+.title-user {
+	margin-left: 12px;
+	margin-top: 12px;
+	font-size: small;
+	color: rgb(119, 119, 119);
+}
+
+.date-box {
+	text-align: right;
+	padding-top: 4px;
+	font-weight: bold;
+	font-size: small;
+	color: rgba(0, 39, 59, 0.34902);
+}
+
+.content-box {
+    white-space: normal;
+}
+
+.title-table {
+	width:100%;
+}
+
