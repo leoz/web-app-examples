@@ -16,7 +16,7 @@ function getRSS(url, container, num) {
                 s += '<li>';
                 s += '<table class="title-table">';
                 s += '<tr>';
-                s += '<td class="avatar-box"><img src="img/avatar.png"/></td>';
+                s += '<td class="avatar-box"><img class="avatar-icon" src="img/avatar.png"/></td>';
                 s += '<td class="title-box" valign="top">';
                 s += '<div class="title-name">' + (value.title ? value.title : '.') + '</div>';
                 s += '<div class="title-user">' + value.author + '</div>';

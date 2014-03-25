@@ -2,6 +2,11 @@
 //	background-color: red;
 }
 
+.avatar-icon {
+    width: 48px;
+    height: 48px;
+}
+
 .title-box {
 //	background-color: pink;
 	width:100%;
@@ -16,14 +21,13 @@
 
 .title-user {
 	margin-left: 12px;
-	margin-top: 12px;
+	margin-top: 10px;
 	font-size: small;
 	color: rgb(119, 119, 119);
 }
 
 .date-box {
 	text-align: right;
-	padding-top: 4px;
 	font-weight: bold;
 	font-size: small;
 	color: rgba(0, 39, 59, 0.34902);
@@ -35,5 +39,10 @@
 
 .title-table {
 	width:100%;
+    border-collapse: collapse;
+}
+
+.title-table td {
+    padding: 0;
 }
 
