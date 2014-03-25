@@ -37,6 +37,11 @@
     white-space: normal;
 }
 
+.content-box img {
+    max-width: 100%;
+    height: auto;
+}
+
 .title-table {
 	width:100%;
     border-collapse: collapse;
