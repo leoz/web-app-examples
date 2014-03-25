@@ -18,10 +18,10 @@ function getRSS(url, container, num) {
                 s += '<tr>';
                 s += '<td class="avatar-box"><img class="avatar-icon" src="img/avatar.png"/></td>';
                 s += '<td class="title-box" valign="top">';
+                s += '<div class="title-date">' + formatDate(value.publishedDate) + '</div>';
                 s += '<div class="title-name">' + (value.title ? value.title : '.') + '</div>';
                 s += '<div class="title-user">' + value.author + '</div>';
                 s += '</td>';
-                s += '<td class="date-box" valign="top">' + formatDate(value.publishedDate) + '</td>';
                 s += '</tr>';
                 s += '</table>';
                 s += '<div class="content-box">' + value.content + '</div>';
