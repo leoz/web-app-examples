@@ -19,7 +19,7 @@ function getRSS(url, container, num) {
                 s += '<h2>' + value.author + '</h2>';
                 s += '<p><strong>' + (value.title ? value.title : '.') + '</strong></p>';
                 s += '<div class="entry_content">' + value.content + '</div>';
-                s += '<p class="ui-li-aside"><strong>' + value.publishedDate + '</strong></p>';
+//                s += '<p class="ui-li-aside"><strong>' + value.publishedDate + '</strong></p>';
                 s += '</li>';
                 
                 $(container).append(s);
