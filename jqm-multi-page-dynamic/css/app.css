@@ -1,0 +1,21 @@
+/* Web App Examples custom CSS */
+
+.wae-header {
+	color: #666;
+	font-family: 'Roboto', cursive;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.wae-footer a {
+	font-size: .8em;
+	color: #999;
+	font-family: 'Roboto', cursive;
+	font-weight: 300;
+}
+
+.wae-content {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
