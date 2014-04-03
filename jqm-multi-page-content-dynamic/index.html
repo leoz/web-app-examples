@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web App Demo</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,700" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/page.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+
+<div data-role="header" class="main-header" data-position="fixed" data-theme="a">
+    <h1>Header</h1>
+</div>
+    
+<div data-role="page" id="page_main" data-title="Page Main">
+    <div role="main" class="ui-content main-content">
+    </div>
+</div>
+
+<div data-role="footer" class="main-footer" data-position="fixed" data-theme="a">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#" id="btn_last" data-icon="arrow-l">First</a></li>
+            <li><a href="#" id="btn_next" data-icon="carat-l">Previous</a></li>
+            <li><a href="#" id="btn_new" data-icon="star">New</a></li>
+            <li><a href="#" id="btn_prev" data-icon="carat-r">Next</a></li>
+            <li><a href="#" id="btn_first" data-icon="arrow-r">Last</a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
