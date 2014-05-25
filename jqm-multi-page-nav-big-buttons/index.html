@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web App Demo</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+
+<div data-role="header" data-position="fixed" data-theme="a" class="main-header">
+	<a href="#" data-rel="back" class="header-button ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l" data-transition="slide">Back</a>
+    <a href="#page_one" class="header-button ui-btn ui-btn-right ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-home" data-icon="grid" data-transition="slide">Home</a>
+    <h1>Header</h1>
+</div>
+			
+<div data-role="page" id="page_one" data-theme="b" data-title="Page One">
+    <div role="main" class="ui-content">
+	    <div class="main-content ui-body ui-body-a ui-corner-all">
+            <h2>Page One Content</h2>
+		    <p>Go to <a href="#page_two">Page Two</a></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#">Acura</a></li>
+                <li><a href="#">Audi</a></li>
+                <li><a href="#">BMW</a></li>
+                <li><a href="#">Cadillac</a></li>
+                <li><a href="#">Acura</a></li>
+                <li><a href="#">Audi</a></li>
+                <li><a href="#">BMW</a></li>
+                <li><a href="#">Cadillac</a></li>
+                <li><a href="#">Ferrari</a></li>
+                <li><a href="#">Ferrari</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="page_two" data-title="Page Two">
+    <div role="main" class="ui-content">
+	    <div class="main-content ui-body ui-body-a ui-corner-all">
+            <h2>Page Two Content</h2>
+		    <p>Go to <a href="#page_three">Page Three</a></p>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="page_three" data-title="Page Three">
+    <div role="main" class="ui-content">
+	    <div class="main-content ui-body ui-body-a ui-corner-all">
+            <h2>Page Three Content</h2>
+		    <p>Go back to <a href="#page_one">Page One</a></p>
+        </div>
+    </div>
+</div>
+
+<div data-role="footer" data-position="fixed" data-theme="a" class="main-footer">
+    <div data-role="navbar">
+        <ul>
+            <li class="footer-li"><a class="footer-button ui-btn ui-btn-icon-notext ui-icon-grid"  href="#page_one" data-transition="slide"></a></li>
+            <li class="footer-li"><a class="footer-button ui-btn ui-btn-icon-notext ui-icon-star"  href="#page_two" data-transition="slide"></a></li>
+            <li class="footer-li"><a class="footer-button ui-btn ui-btn-icon-notext ui-icon-gear"  href="#page_three" data-transition="slide"></a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
+
