@@ -2,26 +2,23 @@
 $(function() {
     $( "[data-role='navbar']" ).navbar();
     $( "[data-role='header'], [data-role='footer']" ).toolbar();
-
-    // Set callbacks to resize the page
-    var doInit = function(){
-        fillPage();
-        
-        $(window).on("resize orientationchange", function(){
-            fillPage();
-        })
-    };
-
-    if (!$.mobile || !$.mobile.activePage) {
-        $(document).on( "pagecontainershow", doInit);
-    }
-    else {
-        doInit();
-    }
+    
+    // Set header left margin
+    var pl = $(".ui-content").css("padding-left");    
+    $("[data-role='header']").css("margin-left", pl);
+    
+    // Set page sizes
+    resizePage();
 });
 
-// Resize the page
-function fillPage() {
+// Resize page
+function resizePage() {
+    setPageHeight();
+    setHeaderWidth();
+}
+
+// Set page height
+function setPageHeight() {
     scroll(0, 0);
     var content = $.mobile.getScreenHeight() -
                   $(".ui-header").outerHeight() - $(".ui-footer").outerHeight() -
@@ -29,8 +26,27 @@ function fillPage() {
     $(".ui-content").height(content);
 }
 
+// Set header width
+function setHeaderWidth() {
+    if ($.mobile.activePage) {
+        var id = $.mobile.activePage.attr('id');
+        var cid = "#" + id + " .ui-content";
+        var w = $(cid).width();
+        if (w > 0) {
+            $("[data-role='header']").width(w);
+            $("[data-role='header']").show();
+        }
+        else {
+            $("[data-role='header']").hide();
+        }
+    }
+    else {
+        $("[data-role='header']").hide();
+    }
+}
+
 // Update the contents of the toolbars
-$( document ).on( "pageshow", "[data-role='page']", function() {
+$(document).on("pageshow", "[data-role='page']", function() {
     // Each of the four pages in this demo has a data-title attribute
     // which value is equal to the text of the nav button
     // For example, on first page: <div data-role="page" data-title="Info">
@@ -45,5 +61,15 @@ $( document ).on( "pageshow", "[data-role='page']", function() {
             $( this ).addClass( "ui-btn-active" );
         }
     });
+});
+
+$( document ).on( "pagecontainershow", function( event, data ) {
+    // Set page sizes
+    resizePage();
+});
+
+$(window).on("resize orientationchange", function() {
+    // Set page sizes
+    resizePage();
 });
 
