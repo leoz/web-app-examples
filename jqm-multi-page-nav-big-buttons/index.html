@@ -13,14 +13,14 @@
 <body>
 
 <div data-role="header" data-position="fixed" data-theme="a" class="main-header">
-	<a href="#" data-rel="back" class="header-button ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l" data-transition="slide">Back</a>
-    <a href="#page_one" class="header-button ui-btn ui-btn-right ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-home" data-icon="grid" data-transition="slide">Home</a>
+	<a href="#" data-rel="back" class="header-button ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l" data-transition="slideup">Back</a>
+    <a href="#page_one" class="header-button ui-btn ui-btn-right ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-home" data-icon="grid" data-transition="slideup">Home</a>
     <h1>Header</h1>
 </div>
 			
 <div data-role="page" id="page_one" data-theme="b" data-title="Page One">
-    <div role="main" class="ui-content">
-	    <div class="main-content ui-body ui-body-a ui-corner-all">
+    <div role="main" class="main-content ui-content">
+	    <div class="main-body ui-body ui-body-a ui-corner-all">
             <h2>Page One Content</h2>
 		    <p>Go to <a href="#page_two">Page Two</a></p>
             <ul data-role="listview" data-inset="true">
@@ -40,8 +40,8 @@
 </div>
 
 <div data-role="page" id="page_two" data-title="Page Two">
-    <div role="main" class="ui-content">
-	    <div class="main-content ui-body ui-body-a ui-corner-all">
+    <div role="main" class="main-content ui-content">
+	    <div class="main-body ui-body ui-body-a ui-corner-all">
             <h2>Page Two Content</h2>
 		    <p>Go to <a href="#page_three">Page Three</a></p>
         </div>
@@ -49,8 +49,8 @@
 </div>
 
 <div data-role="page" id="page_three" data-title="Page Three">
-    <div role="main" class="ui-content">
-	    <div class="main-content ui-body ui-body-a ui-corner-all">
+    <div role="main" class="main-content ui-content">
+	    <div class="main-body ui-body ui-body-a ui-corner-all">
             <h2>Page Three Content</h2>
 		    <p>Go back to <a href="#page_one">Page One</a></p>
         </div>
@@ -60,9 +60,9 @@
 <div data-role="footer" data-position="fixed" data-theme="a" class="main-footer">
     <div data-role="navbar">
         <ul>
-            <li class="footer-li"><a class="footer-button ui-btn ui-btn-icon-notext ui-icon-grid"  href="#page_one" data-transition="slide"></a></li>
-            <li class="footer-li"><a class="footer-button ui-btn ui-btn-icon-notext ui-icon-star"  href="#page_two" data-transition="slide"></a></li>
-            <li class="footer-li"><a class="footer-button ui-btn ui-btn-icon-notext ui-icon-gear"  href="#page_three" data-transition="slide"></a></li>
+            <li class="footer-li"><a class="footer-button ui-btn ui-btn-icon-notext ui-icon-grid"  href="#page_one" data-transition="slideup"></a></li>
+            <li class="footer-li"><a class="footer-button ui-btn ui-btn-icon-notext ui-icon-star"  href="#page_two" data-transition="slideup"></a></li>
+            <li class="footer-li"><a class="footer-button ui-btn ui-btn-icon-notext ui-icon-gear"  href="#page_three" data-transition="slideup"></a></li>
         </ul>
     </div>
 </div>
