@@ -55,14 +55,14 @@
     margin-top: -1.5em;
 }
 
+/* Content */
+
 .ui-content {
     overflow: hidden;
 }
 
-/* Content */
-
 .main-content {
-    padding-top: 0;
+	padding-top: 0;
 }
 
 .main-body {
@@ -70,5 +70,20 @@
 	border-top-right-radius: 0 !important;
     height: 100% !important;
     overflow-y: auto;
+}
+
+@media all and (min-width: 800px) {
+
+}
+
+@media all and (max-width: 799px) {
+	.main-content {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.main-body {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
